@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #666;
+  background-color: #d1d0d0;
+}
+.main-header {
+  background-color: #eac926;
+  padding: 5px;
+}
+.text-header {
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 10px 0;
+}
+.logo {
+  width: 50%;
+  /* margin: auto; */
+}
+.main-nav-bar {
+  /*ocultarla  */
+  display: none;
+}
+.main-nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav-bar ul li {
+  text-decoration: none;
+  color: #03264c;
+  display: inline-block;
+  font-size: 17px;
+  margin: 0;
+  padding: 5px 0;
+}
+.img-product {
+  width: 100%;
+}
+.home-banner {
+  width: 100vw;
+  height: auto;
+}
+.section-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+article {
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+}
+.text-article {
+  background-color: white;
+  width: 100%;
+  /* height: 70px; */
+  flex-wrap: wrap;
+  padding: 15px;
+  border-top: #ebebeb solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.fa-truck {
+  display: block;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  bottom: 40px;
+  right: 10px;
+  color: #39b54a;
+  position: absolute;
+  border: #39b54a solid 1px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.main-header-top {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.nav-search-btn {
+  box-shadow: #fff;
+  background-color: #fff;
+  color: gray;
+  border: none;
+  border-radius: 3px;
+}
+.search {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  display: flex;
+  border-radius: 3px;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+#search-bar {
+  padding: 10px;
+  width: 100%;
+  background: #ffff;
+  border: none;
+  border-radius: 5px;
+  margin-right: -5px;
+}
+.hamburger-menu {
+  /* position: absolute; */
+  display: block; /*una forma de centrarlo, block mas tamaño*/
+  max-width: 40px;
+  max-height: 40px;
+  text-align: center;
+  background-color: #03264c;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 8px;
+  font-size: 17px;
+  margin: 10px auto; /*al ser de bloque lo centra*/
+}
+
+main {
+  width: 90vw;
+  /* display: inline; */
+  margin: auto;
+}
+.headlines {
+  font-size: 24px;
+  text-align: left;
+  margin: 20px auto;
+}
+.price {
+  font-size: 18px;
+  width: 30%;
+}
+.discount {
+  font-size: 16px;
+  width: 70%;
+  color: #39b54a;
+  text-align: center;
+}
+.description-product {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+  display: none;
+}
+.description {
+  font-size: 18px;
+  font-weight: bold;
+}
+.icons-footer {
+  color: rgb(54, 52, 191);
+  font-size: 2em;
+}
+footer {
+  width: 100vw;
+  height: auto;
+  background: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+}
+.sections-footer {
+  padding: 15px;
+}
+.copyright {
+  text-align: start;
+}
+a {
+  text-decoration: none;
+}
+.create-forms {
+padding: 20px 15px;
+
+}
+.control-formulario {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  /* justify-content: center; */
+  align-items: left; 
+}
+
+/* Navegación en tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-header-top {
+    display: flex;
+    justify-content: center;
+  }
+  .main-nav-bar {
+    display: none;
+  }
+  .main-nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-nav-bar ul li {
+    margin: 0 5px;
+  }
+  .text-header {
+    /* max-width: 35%; */
+    text-align: center;
+    font-size: 15px;
+  }
+
+  article {
+    padding: 0;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .fa-truck {
+      bottom: 35px;
+  }
+}
+
+/* Navegación en large table and small desktop */
+@media (min-width: 768px) {
+  .description-product {
+    display: inline;
+  }
+  .search {
+    width: 30%;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  article {
+    width: 47%;
+    padding: 0;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .fa-truck {
+        bottom: 60px;
+  }
+  .main-header-top,
+  .main-nav-bar {
+    /* max-width: 1200px; */
+    margin: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .main-nav-bar ul li {
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  .logo {
+    width: 25%;
+  }
+
+  /* Navegación en laptop and larger */
+  @media (min-width: 1024px) {
+    .logo {
+      width: 25%;
+    }
+    .search {
+      width: 50%;
+    }
+    .section-articles {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+    article {
+      width: 25%;
+      flex-wrap: nowrap;
+    }
+  }
+}
