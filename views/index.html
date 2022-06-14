@@ -22,12 +22,12 @@
                 <a href="#" class="logo">
                     <img src="/images/logo-mercado-liebre.svg" alt="logo-mercadoliebre">
                 </a>
-                <div class="search">
+                <form action="" method="" class="search">
                     <input type="text" id="search-bar" placeholder="Buscar Productos, marcas y más">
                     <button type="submit" class="nav-search-btn">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                </div>
+                </form>
                 <h2 class="text-header">
                     <i class="fa-solid fa-hand-holding-dollar"></i>
                     Comprá en cuotas y sin tarjeta de crédito
@@ -56,54 +56,19 @@
                         <a href="/register">Creá tu cuenta </a>
                     </li>
                     <li> <i class="fa-solid fa-right-to-bracket"></i>
-                        <a href="">Ingresa</a>
+                        <a href="/login">Ingresa</a>
                     </li>
                     <li> <i class="fa-solid fa-basket-shopping"></i>
                         <a href="">Mis compras</a>
                     </li>
                 </ul>
             </nav>
-        </header>`
+        </header>
         <section>
             <img class="home-banner" src="/images/img-home-banner.jpg" alt="home-banner">
         </section>
         <main class="main-container">
-            <form action="/agregar-producto" method="POST" class="create-form">
-                <div class="control-formulario">
-                    <label for="name-product">Nombre del producto</label>
-                    <input type="text" id="name-product" name="name-product" placeholder="Nombre del producto" class="control">
-                </div>
-                <div class="control-formulario">
-                    <label for="price-product">Precio del producto</label>
-                    <input type="text" id="price-product" name="price-product" placeholder="123.45" class="control">
-                </div>
-                <div class="control-formulario"><label for="">Categoria: </label>
-                <select name="category" id="category-product" class="control">
-                    <option value="">Seleccioná una categoria</option>
-                    <option value="hogar">Hogar</option>
-                    <option value="electro">Electro</option>
-                    <option value="indumentaria">Indumentaria</option>
-                </select>
-                </div>
-                <div class="control-formulario"><label for="">Ciudad: </label>
-                <select name="city" id="city" class="control">
-                    <option value="">Seleccioná una Ciudad</option>
-                    <option value="baires">Buenos Aires</option>
-                    <option value="rosario">Rosario</option>
-                    <option value="mendoza">Mendoza</option>
-                </select>
-                </div>
-                <div class="control-formulario">
-                    <label for="description">Descripcion</label>
-                    <textarea name="description" class="control"></textarea>
-                </div>
-                <div class="control-formulario">
-                    <label for="oferta">Está en oferta</label>
-                    <input type="radio" name="oferta">
-                </div>
-                <button type="submit" class="btn-submit">Guardar</button>
-                <button type="reset" class="btn-reset">Borrar</button>
-            </form>
+           
             <h2 class="headlines">Basado en tu última visita</h2>
             <section class="section-articles">
                 <article>

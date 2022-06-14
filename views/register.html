@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="shortcut icon"
+            href="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.9/mercadolibre/favicon.svg"
+            type="image/x-icon">
+        <title>Register-MercadoLiebre</title>
+    </head>
+
+    <body>
+        <form action="/" method="GET" class="create-form">
+            <div class="control-formulario">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" placeholder="Nombre" class="control">
+                <label for="surname">Apellido</label>
+                <input type="text" name="surname" placeholder="Apellido" class="control">
+            </div>
+            <div class="control-formulario">
+                <label for="username">Nombre de usuari@</label>
+                <input type="text" name="username" placeholder="Ej: @SoyGranate" class="control">
+            </div>
+            <div class="control-formulario"><label for="date-birth">Fecha de Nacimiento:</label>
+                <input type="date" min="1930-01-01" max="2005-01-01" name="date-birth" class="control">
+            </div>
+            <div class="control-formulario">
+                <label for="address">Domicilio</label>
+                <input type="text" name="address" placeholder="Ej: 9 de julio 1566" class="control">
+            </div>
+            <div class="control-formulario">
+                <label>
+                    <input type="radio" name="perfil" value="comprar">Soy Comprardor
+                </label>
+                <label>
+                    <input type="radio" name="perfil" value="vender">Soy Vendedor
+                </label>
+            </div>
+            <div class="control-formulario">
+                <h3>Intereses: </h3>
+                <label>
+                    <input type="checkbox" name="hogar" value="hogar">Hogar
+                </label>
+                <label>
+                    <input type="checkbox" name="electro" value="electro">Electro
+                </label>
+                <label>
+                    <input type="checkbox" name="moda" value="moda">Moda
+                </label>
+                <label>
+                    <input type="checkbox" name="jugueteria" value="jugueteria">Jugueteria
+                </label>
+                <label>
+                    <input type="checkbox" name="vida-sana" value="vida-sana">Vida Sana
+                </label>
+            </div>
+            <div class="control-formulario"><label for="avatar">Foto de perfil: </label>
+                <input class="btn-file" type="file" name="avatar" accept=".jpg .png">
+            </div>
+            <div class="control-formulario">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Password" class="control">
+                <label for="confirm-password">Confirmar Contraseña</label>
+                <input type="password" name="confirm-password" placeholder="Confirmar Contraseña" class="control">
+            </div>
+            <div class="control-formulario form-btn">
+                <button type="submit" class="btn-submit">Guardar</button>
+                <button type="reset" class="btn-reset">Borrar</button>
+            </div>
+        </form>
+    </body>
+
+</html>
