@@ -121,7 +121,7 @@ article {
   max-width: 40px;
   max-height: 40px;
   text-align: center;
-  background-color: #03264c;
+  background-color: #2018b3;
   color: white;
   padding: 10px 0px;
   border-radius: 8px;
@@ -185,7 +185,7 @@ a {
 padding: 20px 15px;
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 
 }
 .control-formulario {
@@ -197,9 +197,8 @@ align-items: flex-start;
   max-width: 500px;
 }
 .form-btn {
-  /* display: inline; */
-  align-items: center;
-text-align: center;
+  display: inline;
+  text-align: center;
 }
 .control-formulario label {
   font-style: italic;
@@ -213,9 +212,6 @@ text-align: center;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-bottom: 10px;
-}
-input[type="checkbox"] {
-  max-width: 10px;
 }
 .btn-reset {
   background-color: rgb(205, 111, 111);
