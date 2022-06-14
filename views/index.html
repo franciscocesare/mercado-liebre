@@ -71,14 +71,14 @@
             <form action="/agregar-producto" method="POST" class="create-form">
                 <div class="control-formulario">
                     <label for="name-product">Nombre del producto</label>
-                    <input type="text" id="name-product" name="name-product" placeholder="Nombre del producto">
+                    <input type="text" id="name-product" name="name-product" placeholder="Nombre del producto" class="control">
                 </div>
                 <div class="control-formulario">
                     <label for="price-product">Precio del producto</label>
-                    <input type="text" id="price-product" name="price-product" placeholder="123.45">
+                    <input type="text" id="price-product" name="price-product" placeholder="123.45" class="control">
                 </div>
                 <div class="control-formulario"><label for="">Categoria: </label>
-                <select name="category" id="category-product">
+                <select name="category" id="category-product" class="control">
                     <option value="">Seleccioná una categoria</option>
                     <option value="hogar">Hogar</option>
                     <option value="electro">Electro</option>
@@ -86,7 +86,7 @@
                 </select>
                 </div>
                 <div class="control-formulario"><label for="">Ciudad: </label>
-                <select name="city" id="city">
+                <select name="city" id="city" class="control">
                     <option value="">Seleccioná una Ciudad</option>
                     <option value="baires">Buenos Aires</option>
                     <option value="rosario">Rosario</option>
@@ -94,15 +94,15 @@
                 </select>
                 </div>
                 <div class="control-formulario">
+                    <label for="description">Descripcion</label>
+                    <textarea name="description" class="control"></textarea>
+                </div>
+                <div class="control-formulario">
                     <label for="oferta">Está en oferta</label>
                     <input type="radio" name="oferta">
                 </div>
-                <div class="control-formulario">
-                    <label for="description">Descripcion</label>
-                    <textarea name="description"></textarea>
-                </div>
-                <button type="submit">Guardar</button>
-                <button type="reset">Borrar</button>
+                <button type="submit" class="btn-submit">Guardar</button>
+                <button type="reset" class="btn-reset">Borrar</button>
             </form>
             <h2 class="headlines">Basado en tu última visita</h2>
             <section class="section-articles">
