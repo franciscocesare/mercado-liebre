@@ -32,27 +32,29 @@
         <form action="/" method="GET" class="create-form">
             <div class="control-formulario">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" placeholder="Nombre" class="control">
+                <input type="text" id="name" name="name" placeholder="Nombre" class="control" required>
+            </div>
+            <div class="control-formulario">
                 <label for="surname">Apellido</label>
-                <input type="text" name="surname" placeholder="Apellido" class="control">
+                <input type="text" id="surname" name="surname" placeholder="Apellido" class="control" required>
             </div>
             <div class="control-formulario">
                 <label for="username">Nombre de usuari@</label>
-                <input type="text" name="username" placeholder="Ej: @SoyGranate" class="control">
+                <input type="text" id="username" name="username" placeholder="Ej: @SoyGranate" class="control" required>
             </div>
             <div class="control-formulario"><label for="date-birth">Fecha de Nacimiento:</label>
-                <input type="date" min="1930-01-01" max="2005-01-01" name="date-birth" class="control">
+                <input type="date" min="1930-01-01" max="2005-01-01" name="date-birth" class="control" required>
             </div>
             <div class="control-formulario">
                 <label for="address">Domicilio</label>
-                <input type="text" name="address" placeholder="Ej: 9 de julio 1566" class="control">
+                <input type="text" id="address" name="address" placeholder="Ej: 9 de julio 1566" class="control" required>
             </div>
-            <div class="control-formulario">
-                <label>
-                    <input type="radio" name="perfil" value="comprar">Soy Comprardor
+            <div class="control-formulario perfil">
+                <label for="comprar">
+                    <input type="radio" id="comprar" name="perfil" value="comprar">Soy Comprardor
                 </label>
-                <label>
-                    <input type="radio" name="perfil" value="vender">Soy Vendedor
+                <label for="vender">
+                    <input type="radio" id="vender" name="perfil" value="vender">Soy Vendedor
                 </label>
             </div>
             <div class="control-formulario">

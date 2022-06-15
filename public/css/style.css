@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -164,8 +165,8 @@ main {
   font-size: 2em;
 }
 footer {
-  width: 100vw;
-  height: auto;
+  /* width: 100vw;
+  height: auto; */
   background: white;
   padding: 20px;
   margin-bottom: 10px;
@@ -192,9 +193,13 @@ align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: start;
+  margin: 5px;
   width: 100%;
   max-width: 500px;
+}
+.control-formulario.perfil{
+ display: inline; 
+ margin: 20px;
 }
 .form-btn {
   display: inline;
@@ -202,6 +207,7 @@ align-items: center;
 }
 .control-formulario label {
   font-style: italic;
+  padding: 5px;
 }
 .control {
   display: flex;
@@ -304,6 +310,10 @@ align-items: center;
   .logo {
     width: 25%;
   }
+  .form-btn {
+  margin-bottom: 10%;
+
+  }
 
   /* Navegación en laptop and larger */
   @media (min-width: 1024px) {
@@ -323,5 +333,6 @@ align-items: center;
       width: 25%;
       flex-wrap: nowrap;
     }
+  
   }
 }
