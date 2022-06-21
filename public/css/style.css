@@ -10,8 +10,20 @@ body {
   background-color: #d1d0d0;
 }
 .main-header {
+  width: 100%;
   background-color: #eac926;
+  position: fixed;
+  z-index: 10;
+  top: 0;
   padding: 5px;
+}
+.register {
+  text-align: center;
+  font-size: 18px;
+}
+.login {
+  margin-bottom: 10%;
+  position: relative;
 }
 .text-header {
   text-align: center;
@@ -20,7 +32,7 @@ body {
   margin: 10px 0;
 }
 .logo {
-  width: 50%;
+  width: 40%;
   /* margin: auto; */
 }
 .main-nav-bar {
@@ -44,7 +56,13 @@ body {
   width: 100%;
 }
 .home-banner {
-  width: 100vw;
+  /*EL BANNER SE ME ACHICO AL JUGAR CON POSITION*/
+  width: 100%;
+  height: auto;
+}
+.banner-container {
+  margin-top: 10rem;
+  width: 100%;
   height: auto;
 }
 .section-articles {
@@ -59,7 +77,13 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  z-index: 1;
   position: relative;
+  transition: all 400ms;
+}
+article:hover {
+  transform: scale(1.05);
+  border-radius: 10%;
 }
 .text-article {
   background-color: white;
@@ -85,6 +109,7 @@ article {
   border: #39b54a solid 1px;
   border-radius: 50%;
   padding: 5px;
+  transition: all 600ms;
 }
 .main-header-top {
   align-items: center;
@@ -94,9 +119,9 @@ article {
   font-size: 12px;
 }
 .nav-search-btn {
-  box-shadow: #fff;
   background-color: #fff;
   color: gray;
+  width: 30px;
   border: none;
   border-radius: 3px;
 }
@@ -130,7 +155,7 @@ article {
   margin: 10px auto; /*al ser de bloque lo centra*/
 }
 
-main {
+.main-container {
   width: 90vw;
   /* display: inline; */
   margin: auto;
@@ -163,10 +188,13 @@ main {
 .icons-footer {
   color: rgb(54, 52, 191);
   font-size: 2em;
+  transition: all 1s;
 }
 footer {
   /* width: 100vw;
   height: auto; */
+  margin-top: 10px;
+
   background: white;
   padding: 20px;
   margin-bottom: 10px;
@@ -183,11 +211,10 @@ a {
   text-decoration: none;
 }
 .create-form {
-padding: 20px 15px;
-display: flex;
-flex-direction: column;
-align-items: center;
-
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .control-formulario {
   display: flex;
@@ -197,12 +224,12 @@ align-items: center;
   width: 100%;
   max-width: 500px;
 }
-.control-formulario.perfil{
- display: inline; 
- margin: 20px;
+.control-formulario.perfil {
+  display: inline;
+  margin: 20px;
 }
 .form-btn {
-  display: inline;
+  /* display: inline;   VARIOS FORMS LO TIENEN ENTERO*/
   text-align: center;
 }
 .control-formulario label {
@@ -228,11 +255,12 @@ align-items: center;
   margin: 10px;
 }
 .btn-submit {
-  background-color: #39b54a;
+  background-color: #2018b3;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px;
+  transition: all 400ms;
 }
 .btn-login {
   background-color: #2018b3;
@@ -241,11 +269,15 @@ align-items: center;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  transition: all 400ms;
+}
+.btn-login:hover,
+.btn-submit:hover {
+  background-color: green;
 }
 
 /* Navegación en tablets */
 @media (min-width: 481px) and (max-width: 768px) {
-
   .main-header-top {
     display: flex;
     justify-content: center;
@@ -271,12 +303,15 @@ align-items: center;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
   .fa-truck {
-      bottom: 35px;
+    bottom: 35px;
   }
 }
 
 /* Navegación en large table and small desktop */
 @media (min-width: 768px) {
+  .banner-container {
+    margin-top: 7rem;
+  }
   .description-product {
     display: inline;
   }
@@ -292,7 +327,7 @@ align-items: center;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
   .fa-truck {
-        bottom: 60px;
+    bottom: 60px;
   }
   .main-header-top,
   .main-nav-bar {
@@ -308,18 +343,14 @@ align-items: center;
     font-size: 13px;
   }
   .logo {
-    width: 25%;
+    width: 20%;
   }
   .form-btn {
-  margin-bottom: 10%;
-
+    margin-bottom: 10%;
   }
 
   /* Navegación en laptop and larger */
   @media (min-width: 1024px) {
-    .logo {
-      width: 25%;
-    }
     .search {
       width: 50%;
     }
@@ -333,6 +364,29 @@ align-items: center;
       width: 25%;
       flex-wrap: nowrap;
     }
-  
+    .description-product {
+      opacity: 0;
+    }
+    article:hover .description-product {
+      opacity: 1;
+    }
+    .fa-truck:hover {
+      transform: rotate(-90deg);
+    }
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    footer.login {
+      position: absolute;
+      bottom: -60px;
+      width: 100%;
+    }
+    .sections-footer {
+      width: 33%;
+    }
+    .sections-footer:hover .icons-footer {
+      color: #39b54a;
+    }
   }
 }
