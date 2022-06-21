@@ -18,15 +18,52 @@
 
     <body>
             <header class="main-header login">
-                <div class="main-header-top">
-                    <a href="/" class="logo">
-                        <img src="/images/logo-mercado-liebre.svg" alt="logo-mercadoliebre">
-                    </a>
-                    <h2 class="text-header">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                        Comprá en cuotas y sin tarjeta de crédito
-                    </h2>
-                </div>
+            <div class="main-header-top">
+                <a href="#" class="logo">
+                    <img src="/images/logo-mercado-liebre.svg" alt="logo-mercadoliebre">
+                </a>
+                <form action="/" method="get" class="search">
+                    <input type="text" id="search-bar" name="search" placeholder="Buscar Productos, marcas y más">
+                    <button type="submit" class="nav-search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <h2 class="text-header">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+                </h2>
+            </div>
+            <a href="#" class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="main-nav-bar">
+                <ul>
+                    <li>
+                        <a href="#">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="#">Tiendas Oficiales</a>
+                    </li>
+                    <li>
+                        <a href="#">Vender</a>
+                    </li>
+                    <li>
+                        <a href="#">Ayuda</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><i class="fa-regular fa-id-card"></i>
+                        <a href="/register">Creá tu cuenta </a>
+                    </li>
+                    <li> <i class="fa-solid fa-right-to-bracket"></i>
+                        <a href="/login">Ingresa</a>
+                    </li>
+                    <li> <i class="fa-solid fa-basket-shopping"></i>
+                        <a href="">Mis compras</a>
+                    </li>
+                </ul>
+            </nav>
+
             </header>
         <main class="main-container">
             <h3 class="register">Ingresa a tu cuenta para operar</h3>
