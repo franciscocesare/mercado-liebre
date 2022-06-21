@@ -31,7 +31,7 @@
         </header>
         <main class="main-container login">
             <h3 class="register">Completa los campos y comienza a comprar y vender!</h3>
-        <form action="/" method="GET" class="create-form">
+        <form action="/" method="get" class="create-form">
             <div class="control-formulario">
                 <label for="name">Nombre</label>
                 <input type="text" id="name" name="name" placeholder="Nombre" class="control" required>
@@ -81,10 +81,10 @@
                 <input class="btn-file" type="file" name="avatar" accept=".jpg .png">
             </div>
             <div class="control-formulario">
-                <label for="password">Password</label>
-                <input type="password" name="password" placeholder="Password" class="control">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Password" class="control" required>
                 <label for="confirm-password">Confirmar Contraseña</label>
-                <input type="password" name="confirm-password" placeholder="Confirmar Contraseña" class="control">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Repeat Password" class="control" required>
             </div>
             <div class="control-formulario form-btn">
                 <button type="submit" class="btn-submit">Guardar</button>
