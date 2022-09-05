@@ -5,7 +5,7 @@ const session = require('express-session'); //
 const logger = require('morgan');
 const path = require('path');
 const methodOverride = require('method-override');
-const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware'); 
+const userLoggedMiddleware = require('../middlewares/userLoggedMiddleware'); 
 
 const app = express();
 const PORT = process.env.PORT || 8888;
@@ -26,9 +26,9 @@ app.set("views", path.join(__dirname, "/views")); // Define la ubicación de la 
 
 
 // ************ Route System require and use() ************
-const mainRouter = require("./src/routes/mainRoutes"); // Rutas main
-const productsRouter = require("./src/routes/productsRoutes"); // Rutas /products
-const usersRouter = require("./src/routes/userRoutes"); // Rutas /users
+const mainRouter = require("./routes/mainRoutes"); // Rutas main
+const productsRouter = require("./routes/productsRoutes"); // Rutas /products
+const usersRouter = require("./routes/userRoutes"); // Rutas /users
 
 app.use("/", mainRouter);
 app.use("/products", productsRouter);
