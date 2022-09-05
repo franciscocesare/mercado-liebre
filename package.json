@@ -2,10 +2,10 @@
   "name": "mercado-liebre",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/app.js",
+  "main": "node app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/app.js --ignore .src/views/ --ignore ./src/data/"
+    "dev": "nodemon app.js --ignore .src/views/ --ignore ./src/data/"
   },
   "keywords": [],
   "author": "",
