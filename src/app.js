@@ -1,17 +1,18 @@
 // ************ Require's ************
+const createError = require("http-errors");
+const cookieParser = require("cookie-parser");
 const express = require("express");
-const cookies = require("cookie-parser");  //ojo aca iba cookie-parser
-const session = require('express-session'); //
-const logger = require('morgan');
-const path = require('path');
-const methodOverride = require('method-override');
-const userLoggedMiddleware = require('../middlewares/userLoggedMiddleware'); 
+const session = require("express-session");
+const logger = require("morgan");
+const path = require("path");
+const methodOverride = require("method-override"); // Pasar poder usar los métodos PUT y DELETE
+const userLoggedMiddleware = require("../middlewares/userLoggedMiddleware");
 
 const app = express();
 const PORT = process.env.PORT || 8888;
 
 //**************Middleware ************/
-app.use(cookies()); //OJO QUE ACA IBA EL OTRO COOKIES
+app.use(cookieParser()); //OJO QUE ACA IBA EL OTRO COOKIES
 app.use(session({ secret: "Shh Seccret", resave: false, saveUninitialized: false }));
 app.use(userLoggedMiddleware)   //va despues de iniciar sesion!!! por eso despues del session
 app.use(methodOverride("_method")); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
