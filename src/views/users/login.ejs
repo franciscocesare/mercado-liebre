@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Include Head -->
+    <%- include('../partials/head', {title: 'Ingresa a tu cuenta'}) %>
+    <body>
+        <!-- Header -->
+        <%- include('../partials/headerNavbar') %>
+        <!-- /Header -->
+        <div class="container products-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="products-title">Ingresa a tu cuenta</h2>
+                    <% if (locals.errors) { %> <% for (const error in errors) { %>
+                    <h3 class="error-msg"><%= errors[error].msg %></h3>
+                    <% } %> <% }%>
+                </div>
+            </div>
+            <div class="col-12">
+                <form action="/users/login" method="POST">
+                    <div class="row product-detail">
+                        <div class="col-12 col-md-6">
+                            <label for="email" class="form-label">Email:</label>
+                            <input
+                                type="text"
+                                id="email"
+                                name="email"
+                                placeholder="juan@perez.com"
+                                class="form-input"
+                            />
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="password" class="form-label">password:</label>
+                            <input type="password" id="password" name="password" class="form-input" % />
+                        </div>
+
+                        <div class="col-12">
+                            <input type="checkbox" name="remember_me" id="remember_me" />
+                            <label for="remember_me" class="form-label"> Recordar mi usuario</label>
+                            <div class="col-12">
+                                <button type="submit" class="buy-now-button">Ingresar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <%- include('../partials/footer') %>
+        <!-- /footer -->
+    </body>
+</html>

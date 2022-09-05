@@ -1,0 +1,26 @@
+[
+ {
+  "id": "e0538414-0ea5-4cb3-b4e0-3eea5e2679a8",
+  "name": "francisco",
+  "last_name": "cesare",
+  "email": "pako_cesare@hotmail.com",
+  "password": "$2a$10$NwC1.tU5MrSvRxAELxYTcOiq718Rstouzo84RKvOJ/ESJ5htkbqUu",
+  "avatar": "avatar-1658681893788-licenciado.jpg"
+ },
+ {
+  "id": "6c615d5d-5332-443f-b71d-86ff7bfa7911",
+  "name": "Juan",
+  "last_name": "Perez",
+  "email": "juan@perez.com",
+  "password": "$2a$10$rBTQhBwnZvZ2TOSNzK0zC.17cMP01Dcs9iX0ke55ggUYQlT.78E4q",
+  "avatar": "avatar-1658770829879-diego.png"
+ },
+ {
+  "id": "4479b391-bed2-40b0-b440-5f6f3617b963",
+  "name": "pepito",
+  "last_name": "eliminador",
+  "email": "pako_cesare@hotmaaail.com",
+  "password": "$2a$10$uwTvKhkUSIaiCNGjZiSgYe9uesdBHVbgRZMmLj0cq5heu4aTIKnFK",
+  "avatar": "avatar-1658894406538-diego.png"
+ }
+]
