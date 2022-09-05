@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8888;
 
 //**************Middleware ************/
 app.use(cookieParser()); //OJO QUE ACA IBA EL OTRO COOKIES
-app.use(session({ secret: "Shh Seccret", resave: false, saveUninitialized: false }));
+app.use(session({ secret: "Secretssss", resave: false, saveUninitialized: false }));
 app.use(userLoggedMiddleware)   //va despues de iniciar sesion!!! por eso despues del session
 app.use(methodOverride("_method")); // Pasar poder pisar el method="POST" en el formulario por PUT y DELETE
 app.use(express.static(path.join(__dirname, "../public"))); // Necesario para los archivos estáticos en el folder /public
